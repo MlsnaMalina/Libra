@@ -138,6 +138,21 @@
     'why.r2.text': 'For nine years I worked as a lawyer in different roles across different law firms. I know how lawyers handle information and what they need to work effectively.',
     'why.r3.title': 'Technology',
     'why.r3.text': 'My interest in technology is not a side effect of the latest mainstream wave. I was one of the first in the Czech Republic with a Kindle from Amazon. I had to order Google Home smart-home devices via addresses in Britain and Germany because they were not available locally — but I wanted to try them. I tested the first kind of smartwatch for O2. When the first LLMs arrived, I jumped straight into training and started vibe coding.',
+    'why.pros.kicker': 'A · Authors',
+    'why.pros.title': 'Working with authors',
+    'why.pros.t1': 'attorneys',
+    'why.pros.t2': 'in-house lawyers',
+    'why.pros.t3': 'judges',
+    'why.pros.t4': 'law-school professors',
+    'why.pros.t5': 'notaries',
+    'why.pros.t6': 'mediators',
+    'why.pros.t7': 'bailiffs',
+    'why.pros.body': 'As an editor I work with authors across every legal profession — daily contact. I explain how the collaboration works, onboard authors into our online systems (PublishOne), negotiate scope, manage deadlines and give feedback on manuscripts. When an author is unsure about anything, I am the one they reach out to.',
+    'why.spec.kicker': 'B · Specialisation',
+    'why.spec.title': 'IT law as a specialisation',
+    'why.spec.intro': 'In 2018 Wolters Kluwer ČR received a proposal for the manuscript <em>Programování pro právníky</em> (Lukáš Michna) — I volunteered for it and began building a dedicated <strong>IT Law</strong> specialisation within the legal editorial team. I have since led the following titles:',
+    'why.stat.kicker': 'C · Summary',
+    'why.stat.cap': 'professional law books across specialisations that I edited at Wolters Kluwer ČR — all of them part of <strong>ASPI</strong>.',
     'why.outroKicker': 'Outro',
     'why.outro': 'I am looking for a role where I can translate between worlds every day. Wolters Kluwer / Libra is the most natural next step — and this page is the first proof that I mean it.',
 
@@ -154,7 +169,7 @@
   function snapshotCS() {
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var k = el.getAttribute('data-i18n');
-      if (!(k in CS)) CS[k] = el.textContent;
+      if (!(k in CS)) CS[k] = el.innerHTML;
     });
   }
 
@@ -164,7 +179,7 @@
     document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : 'cs');
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var k = el.getAttribute('data-i18n');
-      if (dict[k] != null) el.textContent = dict[k];
+      if (dict[k] != null) el.innerHTML = dict[k];
     });
     document.querySelectorAll('.lang-btn').forEach(function (b) {
       var on = b.getAttribute('data-lang-set') === lang;
