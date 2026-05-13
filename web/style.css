@@ -478,6 +478,54 @@ p { margin: 0; }
   margin: 4px 0 0;
 }
 
+/* ---------- TIMELINE — simple bullet rows ---------- */
+.tl-bullets {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 1px solid rgba(45,95,79,.18);
+  padding-left: 22px;
+}
+.tl-bullets li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  align-items: baseline;
+}
+.tl-bullets li::before {
+  content: '';
+  position: absolute;
+  left: -27px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: .85;
+}
+.tl-bullet-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.tl-bullet-val {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(45,95,79,.85);
+}
+@media (max-width: 720px) {
+  .tl-bullets { padding-left: 16px; }
+  .tl-bullets li { grid-template-columns: 1fr; gap: 2px; }
+  .tl-bullets li::before { left: -21px; }
+}
+
 /* ---------- TIMELINE — level 2 (sub-items) ---------- */
 .tl-sub {
   margin: 14px 0 0;
