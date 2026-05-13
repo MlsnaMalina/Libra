@@ -478,6 +478,89 @@ p { margin: 0; }
   margin: 4px 0 0;
 }
 
+/* ---------- TIMELINE — level 2 (sub-items) ---------- */
+.tl-sub {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-left: 1px solid rgba(45,95,79,.18);
+  padding-left: 22px;
+}
+.tl-sub-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  align-items: start;
+  position: relative;
+}
+.tl-sub-row::before {
+  content: '';
+  position: absolute;
+  left: -27px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: .85;
+}
+.tl-sub-when {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tl-sub-year {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  color: var(--ink);
+  margin: 0;
+}
+.tl-sub-dur {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin: 0;
+}
+.tl-sub-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tl-sub-cat {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin: 0;
+}
+.tl-sub-title {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0;
+}
+.tl-sub-desc {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(45,95,79,.8);
+  margin: 2px 0 0;
+}
+@media (max-width: 720px) {
+  .tl-sub { padding-left: 16px; }
+  .tl-sub-row { grid-template-columns: 1fr; gap: 4px; }
+  .tl-sub-row::before { left: -21px; }
+}
+
 /* ---------- PROJEKTY ---------- */
 .proj-head {
   display: grid;
