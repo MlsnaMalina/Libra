@@ -7,6 +7,7 @@
     'nav.projects': 'Projects',
     'nav.why': 'Why Libra',
     'nav.about': 'About',
+    'nav.refs': 'References',
     'nav.contact': 'Contact',
 
     'hero.available': 'Available from July 2026',
@@ -164,7 +165,16 @@
     'about.p2': 'Since 2024 I have been self-employed — continued cooperation with WK and my own AI projects (vibe coding, prompt design, legal tools). Working as a book editor for Wolters Kluwer ČR means checking the legal currency of texts every day, talking to practising attorneys, judges and other legal professionals, and constantly tracking legislation and the changes that are coming.',
     'about.p3': 'I did not leave the law — I just started practising it differently. That is why I am a fit for the <em>Legal Engineer</em>&ensp; role at Wolters Kluwer Libra.',
 
-    'contact.kicker': '06 — Contact',
+    'refs.kicker': '06 — References',
+    'refs.title1': 'What the authors say',
+    'refs.title2': 'about working with me.',
+    'refs.q1': '…I would also like to thank you and the language editor explicitly for your work (even though colleague Rak has already, quite rightly, thanked you on behalf of both of us). After your edits I can finally picture how the book will actually look, and I am very pleased with that picture (more than I expected).',
+    'refs.q2': 'Exceptional satisfaction with Ms Mlsnová — very easy collaboration, replies immediately and always tries hard to help. Sometimes I almost feel bad pestering her with silly questions, but she is clearly a very tolerant person :).',
+    'refs.q3': 'Excellent, thank you very much, you really are very efficient. I look forward to it and will hopefully be in touch soon about the monograph.',
+    'refs.q4': 'Dear Ms Mlsnová, you are simply the best, thank you so much!!!',
+    'refs.q5': 'Ms Mlsnová is brilliant — the collaboration cannot be better. Thank you, Gazda.',
+
+    'contact.kicker': '07 — Contact',
     'contact.title': 'Let us talk.',
     'contact.lede': 'Email is fastest. I reply within 24 hours on working days.',
     'contact.email': 'E-mail',
