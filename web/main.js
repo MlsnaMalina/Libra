@@ -151,7 +151,7 @@
     'why.pros.body': 'As an editor I work with authors across every legal profession — daily contact. I explain how the collaboration works, onboard authors into our online systems (PublishOne), negotiate scope, manage deadlines and give feedback on manuscripts. When an author is unsure about anything, I am the one they reach out to.',
     'why.spec.kicker': 'A · Specialisation',
     'why.spec.title': 'IT law as a specialisation',
-    'why.spec.intro': 'In 2018 Wolters Kluwer ČR received a proposal for the manuscript <em>Programování pro právníky</em> (Lukáš Michna) — I volunteered for it and began building a dedicated <strong>IT Law</strong> specialisation within the legal editorial team. I have since led the following titles:',
+    'why.spec.intro': 'In 2018 Wolters Kluwer ČR received a proposal for the manuscript <em>Programování pro právníky</em> (Lukáš Michna) — I volunteered for it and began building a dedicated <strong>IT Law</strong> specialisation within the legal editorial team. Under it I published the following titles:',
     'why.stat.kicker': 'B · Summary',
     'why.stat.cap': 'professional law books across specialisations that I edited at Wolters Kluwer ČR — all of them part of <strong>ASPI</strong>.',
     'why.outroKicker': 'Outro',
@@ -162,7 +162,7 @@
     'about.title2': 'I just practise it differently.',
     'about.p1': '<strong>Master of Law (UWB)</strong>, 9 years in legal practice, 7 years as a book editor in the legal division at Wolters Kluwer ČR. Specialisations: IT law, financial law, intellectual and industrial property law, civil procedure. Inside the editorial team I stood behind the creation of a dedicated IT law area.',
     'about.p2': 'Since 2024 I have been self-employed — continued cooperation with WK and my own AI projects (vibe coding, prompt design, legal tools). Working as a book editor for Wolters Kluwer ČR means checking the legal currency of texts every day, talking to practising attorneys, judges and other legal professionals, and constantly tracking legislation and the changes that are coming.',
-    'about.p3': 'I did not leave the law — I just started practising it differently. That is why I am a fit for the <em>Legal Engineer</em> role at Wolters Kluwer Libra.',
+    'about.p3': 'I did not leave the law — I just started practising it differently. That is why I am a fit for the <em>Legal Engineer</em>&ensp; role at Wolters Kluwer Libra.',
 
     'contact.kicker': '06 — Contact',
     'contact.title': 'Let us talk.',

@@ -776,7 +776,8 @@ p { margin: 0; }
   border-left: 4px solid var(--accent);
   padding: 40px 44px 36px;
 }
-.proof-spec .proof-body { margin-bottom: 28px; max-width: 76ch; }
+.proof-spec .proof-head { text-align: center; }
+.proof-spec .proof-body { margin: 0 auto 28px; max-width: 76ch; text-align: center; }
 .proof-spec .proof-body em {
   font-style: italic;
   color: var(--ink);
@@ -943,7 +944,11 @@ p { margin: 0; }
   line-height: 1.2;
   letter-spacing: -.01em;
   margin: 0 0 18px;
+  text-align: center;
 }
+.contact .kicker.accent { text-align: center; }
+.contact-grid, .contact-foot { text-align: center; justify-content: center; }
+.contact-list { justify-content: center; }
 .contact-title .accent-em { color: var(--accent); }
 
 .contact-grid {
