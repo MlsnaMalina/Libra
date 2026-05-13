@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <title>Kateřina Mlsnová — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #2D5F4F;
+      --accent: #8B2C44;
+      --surface: #FFFFFF;
+      --paper: #F4F4F2;
+      --mute: #5A5A5A;
+      --line: rgba(45,95,79,.18);
+      --serif: 'Libre Caslon Text', Georgia, serif;
+      --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, monospace;
+    }
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #e8e8e6; }
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      font-size: 9.6pt;
+      line-height: 1.42;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { margin: 0; padding: 0; list-style: none; }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: var(--surface);
+      margin: 12mm auto;
+      padding: 14mm 14mm 12mm;
+      position: relative;
+      box-shadow: 0 4px 24px rgba(0,0,0,.08);
+      display: grid;
+      grid-template-columns: 1fr 62mm;
+      column-gap: 11mm;
+      row-gap: 0;
+    }
+
+    /* ---------- HEAD ---------- */
+    .head-left {
+      grid-column: 1;
+      padding-bottom: 6mm;
+      border-bottom: 1px solid var(--line);
+    }
+    .head-right {
+      grid-column: 2;
+      padding-bottom: 6mm;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      gap: 6mm;
+      align-items: flex-start;
+    }
+    .kicker {
+      font-family: var(--mono);
+      font-size: 7.5pt;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 4mm;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 30pt;
+      line-height: 1.02;
+      letter-spacing: -.018em;
+      margin: 0 0 3mm;
+      color: var(--ink);
+    }
+    h1 .accent-em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .role {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 11pt;
+      color: var(--ink);
+      margin: 0;
+    }
+    .photo {
+      width: 26mm;
+      height: 26mm;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .contact-block {
+      font-family: var(--sans);
+      font-size: 8.4pt;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .contact-block .c-label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 6.5pt;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mute);
+      margin-top: 1.8mm;
+    }
+    .contact-block .c-label:first-child { margin-top: 0; }
+
+    /* ---------- BODY ---------- */
+    .col-main {
+      grid-column: 1;
+      padding-top: 6mm;
+    }
+    .col-side {
+      grid-column: 2;
+      padding-top: 6mm;
+      border-left: 1px solid var(--line);
+      padding-left: 6mm;
+      margin-left: -6mm;
+    }
+
+    section { margin-bottom: 5.5mm; }
+    section:last-child { margin-bottom: 0; }
+
+    h2 {
+      font-family: var(--mono);
+      font-weight: 500;
+      font-size: 7.5pt;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 3mm;
+      display: flex;
+      align-items: center;
+      gap: 3mm;
+    }
+    h2::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+    .col-side h2 { font-size: 7pt; }
+
+    .about {
+      font-family: var(--serif);
+      font-size: 10.4pt;
+      line-height: 1.5;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    /* Experience */
+    .xp { margin-bottom: 3.6mm; }
+    .xp:last-child { margin-bottom: 0; }
+    .xp-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 4mm;
+      margin-bottom: .8mm;
+    }
+    .xp-title {
+      font-family: var(--serif);
+      font-size: 11pt;
+      font-weight: 400;
+      color: var(--ink);
+      margin: 0;
+    }
+    .xp-date {
+      font-family: var(--mono);
+      font-size: 7.2pt;
+      letter-spacing: .1em;
+      color: var(--mute);
+      white-space: nowrap;
+    }
+    .xp-org {
+      font-family: var(--sans);
+      font-size: 8.6pt;
+      font-weight: 500;
+      color: var(--accent);
+      margin: 0 0 1.4mm;
+      letter-spacing: .01em;
+    }
+    .xp-desc {
+      font-family: var(--sans);
+      font-size: 8.8pt;
+      line-height: 1.42;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    /* Side blocks */
+    .side-list li {
+      padding: 1.4mm 0;
+      border-top: 1px solid var(--line);
+      font-size: 8.4pt;
+    }
+    .side-list li:first-child { border-top: none; padding-top: 0; }
+    .side-list li:last-child { padding-bottom: 0; }
+    .side-list .li-label {
+      font-family: var(--mono);
+      font-size: 6.4pt;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mute);
+      display: block;
+      margin-bottom: .3mm;
+    }
+    .side-list .li-value {
+      font-family: var(--sans);
+      color: var(--ink);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4mm 1.6mm;
+    }
+    .tag {
+      font-family: var(--mono);
+      font-size: 6.8pt;
+      letter-spacing: .08em;
+      padding: 1mm 2mm;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      border-radius: 1px;
+    }
+
+    .plus-list li {
+      position: relative;
+      padding-left: 4mm;
+      margin-bottom: 1.2mm;
+      font-size: 8.6pt;
+    }
+    .plus-list li::before {
+      content: '§';
+      position: absolute;
+      left: 0;
+      top: -.2mm;
+      color: var(--accent);
+      font-family: var(--serif);
+      font-size: 9pt;
+    }
+    .plus-list li:last-child { margin-bottom: 0; }
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.6mm;
+    }
+    .ai-item {
+      display: grid;
+      grid-template-columns: 28mm 1fr;
+      gap: 3mm;
+      font-size: 8.6pt;
+      padding-bottom: 1.6mm;
+      border-bottom: 1px solid var(--line);
+    }
+    .ai-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .ai-key {
+      font-family: var(--mono);
+      font-size: 6.6pt;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding-top: .4mm;
+    }
+    .ai-val {
+      font-family: var(--sans);
+      color: var(--ink);
+    }
+
+    /* Foot monogram */
+    .km-mark {
+      position: absolute;
+      right: 14mm;
+      bottom: 8mm;
+      font-family: var(--serif);
+      font-size: 14pt;
+      letter-spacing: -.02em;
+      color: var(--accent);
+    }
+    .foot-meta {
+      position: absolute;
+      left: 14mm;
+      bottom: 9mm;
+      font-family: var(--mono);
+      font-size: 6.4pt;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--mute);
+    }
+
+    /* Print */
+    @media print {
+      html, body { background: #fff; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="head-left">
+    <p class="kicker">CV · KVĚTEN 2026</p>
+    <h1>Kateřina <span class="accent-em">Mlsnová</span></h1>
+    <p class="role">Redaktorka · Prompt Engineer · AI Builder</p>
+  </div>
+
+  <div class="head-right">
+    <img class="photo" src="../images/profil.jpeg" alt="Kateřina Mlsnová" />
+    <div class="contact-block">
+      <span class="c-label">Lokalita</span>
+      Průhonice
+      <span class="c-label">E-mail</span>
+      k.mlsnova@seznam.cz
+      <span class="c-label">Telefon</span>
+      +420 728 069 926
+      <span class="c-label">LinkedIn</span>
+      /in/katerinamlsnova
+      <span class="c-label">Web</span>
+      katerinamlsnova.cz
+    </div>
+  </div>
+
+  <div class="col-main">
+
+    <section>
+      <h2>O mně</h2>
+      <p class="about">
+        Po studiu práv, <em>9 letech v advokacii</em> a <em>7 letech redakční práce</em> v odborném nakladatelství jsem se vydala na cestu samostatné činnosti. Aktivně pracuji s AI nástroji — Claude, Claude Code, ChatGPT. Pomocí <em>vibe codingu</em> stavím vlastní digitální projekty a věnuji se prompt engineeringu. <strong>Most mezi právem, jazykem a technologií.</strong>
+      </p>
+    </section>
+
+    <section>
+      <h2>AI a technologie</h2>
+      <div class="ai-grid">
+        <div class="ai-item">
+          <div class="ai-key">Nástroje</div>
+          <div class="ai-val">Claude, Claude Code, ChatGPT</div>
+        </div>
+        <div class="ai-item">
+          <div class="ai-key">Vibe coding</div>
+          <div class="ai-val">tvorba HTML/CSS/JS projektů přes AI-assisted development</div>
+        </div>
+        <div class="ai-item">
+          <div class="ai-key">Prompt eng.</div>
+          <div class="ai-val">strukturované prompty, meta-prompty, šablony workflow</div>
+        </div>
+        <div class="ai-item">
+          <div class="ai-key">Projekty</div>
+          <div class="ai-val">osobní web (katerinamlsnova.cz), výukové hry pro děti, interaktivní checklisty, kalkulačky</div>
+        </div>
+        <div class="ai-item">
+          <div class="ai-key">Stack</div>
+          <div class="ai-val">Git, GitHub, Vercel</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Praxe</h2>
+
+      <div class="xp">
+        <div class="xp-row">
+          <p class="xp-title">Redaktorka na volné noze</p>
+          <span class="xp-date">2024 — DNES</span>
+        </div>
+        <p class="xp-org">OSVČ</p>
+        <p class="xp-desc">Spolupráce na vydávání právních monografií, komentářů k zákonům a knih na klíč. Souběžně aktivní rozvoj AI dovedností — vibe coding, prompt engineering, tvorba vlastních digitálních nástrojů.</p>
+      </div>
+
+      <div class="xp">
+        <div class="xp-row">
+          <p class="xp-title">Knižní redaktorka</p>
+          <span class="xp-date">2017 — 2024</span>
+        </div>
+        <p class="xp-org">Wolters Kluwer ČR</p>
+        <p class="xp-desc">Redaktorka v právní oblasti se specializací na IT právo, finanční právo, právo duševního vlastnictví a občanské právo procesní. <strong>71 vydaných odborných knih</strong>, aktuálně 4 rukopisy v práci. Zpracování rukopisu, komunikace s autory a dodavateli, onboarding autorů do redakčních systémů.</p>
+      </div>
+
+      <div class="xp">
+        <div class="xp-row">
+          <p class="xp-title">Advokátní koncipient</p>
+          <span class="xp-date">2013 — 2016</span>
+        </div>
+        <p class="xp-org">AK Hrudka &amp; partners</p>
+        <p class="xp-desc">Generální právní praxe, autorská práva, insolvenční řízení, vymáhání pohledávek. Příprava podkladů, zastupování u soudu, formulářové smlouvy, správa datových schránek.</p>
+      </div>
+
+      <div class="xp">
+        <div class="xp-row">
+          <p class="xp-title">Odborný administrativní pracovník</p>
+          <span class="xp-date">2010 — 2013</span>
+        </div>
+        <p class="xp-org">AK Kovanda &amp; Tykalová · Jan Mach</p>
+        <p class="xp-desc">Příprava podkladů pro advokáty a koncipienty, administrativní chod kanceláře. Souběžně se studiem na právnické fakultě.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <aside class="col-side">
+
+    <section>
+      <h2>Vzdělání</h2>
+      <div class="xp">
+        <div class="xp-row">
+          <p class="xp-title">Mgr.</p>
+          <span class="xp-date">2009 — 13</span>
+        </div>
+        <p class="xp-org">PF, Západočeská univerzita v Plzni</p>
+        <p class="xp-desc">Semestr Global Economy &amp; Law Program, University of Haifa, Izrael (2013).</p>
+      </div>
+      <div class="xp" style="margin-top:3mm;">
+        <div class="xp-row">
+          <p class="xp-title">Bc. — Právo v podnikání</p>
+          <span class="xp-date">2005 — 08</span>
+        </div>
+        <p class="xp-org">Vysoká škola aplikovaného práva</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Plusy</h2>
+      <ul class="plus-list">
+        <li>Organizovanost a systematičnost</li>
+        <li>Smysl pro detail</li>
+        <li>Builder mindset</li>
+        <li>Prompt engineering</li>
+        <li>71 redigovaných knih</li>
+        <li>Chuť objevovat nové</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Jazyky</h2>
+      <ul class="side-list">
+        <li>
+          <span class="li-label">Čeština</span>
+          <span class="li-value">Rodilá mluvčí</span>
+        </li>
+        <li>
+          <span class="li-label">Angličtina</span>
+          <span class="li-value">Komunikativní (semestr v Izraeli)</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Nástroje</h2>
+      <div class="tag-row">
+        <span class="tag">ASPI</span>
+        <span class="tag">ISAK</span>
+        <span class="tag">PublishOne</span>
+        <span class="tag">Codexis</span>
+        <span class="tag">Canva</span>
+        <span class="tag">Navision</span>
+        <span class="tag">MS 365</span>
+        <span class="tag">Google Workspace</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ostatní</h2>
+      <ul class="side-list">
+        <li>
+          <span class="li-label">Psaní všemi deseti</span>
+          <span class="li-value">411 úhozů / min.</span>
+        </li>
+        <li>
+          <span class="li-label">Typografie</span>
+          <span class="li-value">Pokročilé znalosti</span>
+        </li>
+      </ul>
+    </section>
+
+  </aside>
+
+  <p class="foot-meta">§ KATERINAMLSNOVA.CZ</p>
+  <span class="km-mark">KM</span>
+
+</div>
+
+</body>
+</html>

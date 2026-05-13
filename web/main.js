@@ -2,6 +2,12 @@
   'use strict';
 
   var EN = {
+    'nav.three': 'Three worlds',
+    'nav.path': 'Path',
+    'nav.projects': 'Projects',
+    'nav.why': 'Why Libra',
+    'nav.contact': 'Contact',
+
     'hero.available': 'Available from July 2026',
     'hero.kicker': 'Legal Engineer · Application',
     'hero.h1a': 'A bridge between law,',
@@ -100,7 +106,7 @@
     'why.title1': 'Three reasons,',
     'why.title2': 'why Wolters Kluwer specifically.',
     'why.r1.title': 'I know the product DNA from the inside',
-    'why.r1.text': 'For seven years I was an employee of the legal division at Wolters Kluwer ČR. I still work with WK, so that is nine years of continuous cooperation. I know how a legal text travels from author to reader. I know what ASPI looks like from the inside — and I have been contributing to its content for nine years.',
+    'why.r1.text': 'For seven years I was an employee of the legal division at Wolters Kluwer ČR. I still work with WK, so that is nine years of continuous cooperation. I know how a legal text travels from author to reader. I know what ASPI looks like from the inside — and I have been contributing to its content for nine years. In the legal editorial team I stood behind the creation of a dedicated IT Law area, which I have been working on from the very beginning.',
     'why.r2.title': 'A connection to the law',
     'why.r2.text': 'For nine years I worked as a lawyer in different roles across different law firms. I know how lawyers handle information and what they need to work effectively.',
     'why.r3.title': 'Technology',
