@@ -641,12 +641,12 @@ p { margin: 0; }
 /* ---------- KONTAKT ---------- */
 .contact {
   position: relative;
-  background: var(--ink);
-  color: #fff;
+  background: var(--surface);
+  color: var(--ink);
   padding: 120px 0 56px;
   overflow: hidden;
 }
-.contact .kicker.accent { color: #d98a9d; }
+.contact .kicker.accent { color: var(--accent); }
 
 .contact-title {
   font-family: var(--serif);
@@ -656,7 +656,7 @@ p { margin: 0; }
   letter-spacing: -.024em;
   margin: 0 0 80px;
 }
-.contact-title .accent-em { color: #d98a9d; }
+.contact-title .accent-em { color: var(--accent); }
 
 .contact-grid {
   display: grid;
@@ -671,7 +671,7 @@ p { margin: 0; }
   font-family: var(--sans);
   font-size: 17px;
   line-height: 1.6;
-  color: rgba(255,255,255,.6);
+  color: var(--mute);
   max-width: 360px;
 }
 .contact-photo {
@@ -692,24 +692,24 @@ p { margin: 0; }
   align-items: baseline;
   gap: 24px;
   padding: 22px 0;
-  border-top: 1px solid rgba(255,255,255,.14);
+  border-top: 1px solid rgba(0,0,0,.12);
 }
-.contact-list li:first-child { border-top: 1px solid rgba(255,255,255,.14); }
-.contact-list li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
+.contact-list li:first-child { border-top: 1px solid rgba(0,0,0,.12); }
+.contact-list li:last-child { border-bottom: 1px solid rgba(0,0,0,.12); }
 .c-label {
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.6);
+  color: var(--mute);
 }
 .contact-list a {
   font-family: var(--serif);
   font-size: 22px;
-  color: #fff;
+  color: var(--ink);
   transition: color .18s ease;
 }
-.contact-list a:hover { color: #d98a9d; }
+.contact-list a:hover { color: var(--accent); }
 
 .km-big {
   position: absolute;
@@ -720,7 +720,7 @@ p { margin: 0; }
   font-weight: 400;
   line-height: .8;
   letter-spacing: -.04em;
-  color: rgba(255,255,255,.07);
+  color: rgba(0,0,0,.06);
   user-select: none;
   pointer-events: none;
 }
@@ -733,11 +733,11 @@ p { margin: 0; }
   flex-wrap: wrap;
   gap: 12px;
   padding-top: 36px;
-  border-top: 1px solid rgba(255,255,255,.14);
+  border-top: 1px solid rgba(0,0,0,.12);
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: .14em;
-  color: rgba(255,255,255,.55);
+  color: var(--mute);
 }
 .cf-meta { text-transform: uppercase; }
 .cf-copy { letter-spacing: .04em; text-transform: none; }
