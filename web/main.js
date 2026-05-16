@@ -136,6 +136,8 @@
     'proj.p4.title': 'Learning games for kids',
     'proj.p4.desc': 'Learning games for preschoolers — counting up to 20, simple memory exercises. Playful, designed for a specific user.',
     'proj.p4.t1': 'JS', 'proj.p4.t2': 'LocalStorage',
+    'proj.p4.link1': 'Magic heart potion →',
+    'proj.p4.link2': 'Feed the sweet-tooth animal →',
     'proj.p5.cat': 'Tool', 'proj.p5.status': 'live',
     'proj.p5.title': 'Services pricing calculator',
     'proj.p5.desc': 'A calculator that tells the client the price interactively, instead of passively receiving (uncomfortable) information.',
@@ -188,7 +190,7 @@
     'contact.lede': 'Email is fastest. I reply within 24 hours on working days.',
     'contact.email': 'E-mail',
     'contact.phone': 'Phone',
-    'contact.meta': 'PRAGUE · CZ · CV (PDF) · COVER LETTER (PDF)',
+    'contact.meta': 'PRAGUE / PRŮHONICE · CZ · CV (PDF) · COVER LETTER (PDF)',
     'contact.copy': '© 2026 Kateřina Mlsnová. This page was written by hand with Claude Code.'
   };
 

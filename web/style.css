@@ -190,7 +190,7 @@ p { margin: 0; }
 
 /* ---------- sections ---------- */
 .section {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 .section-paper { background: var(--paper); }
 .section-title {
@@ -199,7 +199,7 @@ p { margin: 0; }
   font-size: clamp(38px, 5.4vw, 64px);
   line-height: 1.05;
   letter-spacing: -.018em;
-  margin: 0 0 72px;
+  margin: 0 0 48px;
   color: var(--ink);
 }
 .section-lede {
@@ -213,7 +213,7 @@ p { margin: 0; }
 /* ---------- HERO ---------- */
 .hero {
   position: relative;
-  padding: 56px 0 96px;
+  padding: 40px 0 64px;
 }
 .hero-available {
   margin-bottom: 32px;
@@ -223,7 +223,7 @@ p { margin: 0; }
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   gap: 64px;
   align-items: start;
-  margin-bottom: 80px;
+  margin-bottom: 56px;
 }
 .hero-text .kicker.accent {
   margin-bottom: 18px;
@@ -626,7 +626,7 @@ p { margin: 0; }
   grid-template-columns: 1fr auto;
   align-items: end;
   gap: 48px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 .proj-head .section-title { margin-bottom: 0; }
 .proj.proj-hero {
@@ -824,13 +824,22 @@ p { margin: 0; }
 }
 .proj:hover .proj-link { color: var(--accent); }
 
+.proj-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+.proj-links .proj-link { display: inline-block; transition: color .18s ease; }
+.proj-links .proj-link:hover { color: var(--accent); }
+
 /* ---------- PROČ LIBRA ---------- */
 .reasons {
   display: grid;
   grid-template-columns: 1fr 32px 1fr 32px 1fr;
   align-items: stretch;
   gap: 16px;
-  margin-bottom: 96px;
+  margin-bottom: 64px;
 }
 .reason-box {
   display: flex;
@@ -1273,9 +1282,9 @@ p { margin: 0; }
 @media (max-width: 768px) {
   body { font-size: 16px; }
   .container { padding: 0 20px; }
-  .section { padding: 80px 0; }
-  .section-title { margin-bottom: 48px; }
-  .hero { padding: 32px 0 64px; }
+  .section { padding: 56px 0; }
+  .section-title { margin-bottom: 36px; }
+  .hero { padding: 24px 0 48px; }
   .hero-available { margin-bottom: 24px; }
   .hero-grid {
     grid-template-columns: 1fr;
