@@ -10,7 +10,6 @@
     'nav.refs': 'References',
     'nav.contact': 'Contact',
 
-    'hero.available': 'Available from July 2026',
     'hero.kicker': 'Legal Engineer · Application',
     'hero.h1a': 'A bridge between law,',
     'hero.h1b': 'language and ',
@@ -47,7 +46,7 @@
     'three.w2.idx': '02 / 03',
     'three.w2.year': '2017–2024',
     'three.w3.name': 'Technology',
-    'three.w3.body': 'Two years of actively building with AI (LLMs, Claude Code, prompt design) and learning the field. Personal website. Checklists for editors. A services calculator. Interactive digital materials. A new project every month, all publicly available. Builder mindset, not LinkedIn AI hype. Even this page was made by hand with Claude Code.',
+    'three.w3.body': 'Two years of actively building with AI (LLMs, Claude Code, prompt design) and learning the field. Personal website. Checklists for editors. A services calculator. Interactive digital materials. A new project every month, all publicly available. Practical builder mindset — focused on working prototypes, not AI buzzwords. Even this page was made by hand with Claude Code.',
     'three.w3.t1': 'Claude Code',
     'three.w3.t2': 'Prompts',
     'three.w3.t3': 'HTML/CSS/JS',
@@ -104,7 +103,7 @@
     'path.m5.dur': 'present',
     'path.m5.cat': 'Builder',
     'path.m5.title': 'Self-employed + AI builder',
-    'path.m5.desc': 'Continued close cooperation with Wolters Kluwer ČR as a book editor, plus AI training, vibe coding, personal website, learning games, legal checklists, calculators. A new project every month.',
+    'path.m5.desc': 'Continued close cooperation with Wolters Kluwer ČR as a book editor, plus AI-assisted prototyping, AI-assisted development, workflow prototyping with AI tools, personal website, learning games, legal checklists, calculators. A new project every month.',
     'path.m5.b1.label': 'AI & tools',
     'path.m5.b1.val': 'Claude, Claude Design, Claude Code, ChatGPT (+ models), Gemini, Antigravity, NotebookLM, Macaly, Git, HTML/CSS/JS and more',
     'path.m5.b2.label': 'Training',
@@ -182,8 +181,7 @@
     'refs.q1': '…I would also like to thank you and the language editor explicitly for your work (even though colleague Rak has already, quite rightly, thanked you on behalf of both of us). After your edits I can finally picture how the book will actually look, and I am very pleased with that picture (more than I expected).',
     'refs.q2': 'Exceptional satisfaction with Ms Mlsnová — very easy collaboration, replies immediately and always tries hard to help. Sometimes I almost feel bad pestering her with silly questions, but she is clearly a very tolerant person :).',
     'refs.q3': 'Excellent, thank you very much, you really are very efficient. I look forward to it and will hopefully be in touch soon about the monograph.',
-    'refs.q4': 'Dear Ms Mlsnová, you are simply the best, thank you so much!!!',
-    'refs.q5': 'Ms Mlsnová is brilliant — the collaboration cannot be better. Thank you, Gazda.',
+    'refs.q4': 'Ms Mlsnová is brilliant — the collaboration cannot be better. Thank you, Gazda.',
 
     'contact.kicker': '07 — Contact',
     'contact.title': 'Let us talk.',
@@ -275,8 +273,10 @@
     initSmoothScroll();
     initNavToggle();
     initLangToggle();
+    // Default language is EN. CS texts live in HTML (snapshotted above).
+    // If user previously chose CS, honor that; otherwise apply EN on load.
     var saved = null;
     try { saved = localStorage.getItem('lang'); } catch (e) {}
-    if (saved === 'en') setLang('en');
+    setLang(saved === 'cs' ? 'cs' : 'en');
   });
 })();
