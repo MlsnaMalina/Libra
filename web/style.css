@@ -1245,7 +1245,10 @@ p { margin: 0; }
   letter-spacing: .14em;
   color: var(--mute);
 }
-.cf-meta { text-transform: uppercase; }
+.cf-meta { text-transform: uppercase; display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.cf-meta a { text-decoration: none; transition: color .18s ease; }
+.cf-meta a:hover { color: var(--accent); }
+.cf-sep { opacity: .5; }
 .cf-copy { letter-spacing: .04em; text-transform: none; }
 
 /* ---------- fade-in ---------- */

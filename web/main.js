@@ -17,6 +17,7 @@
     'hero.lede': 'Nine years in legal practice. Seven years in the Wolters Kluwer ČR editorial team. Two years with AI tools. I know how lawyers work with information. I know how Wolters Kluwer publishes professional content. And I can build a tool that connects these two worlds.',
     'hero.cta1': 'Open portfolio',
     'hero.cta2': 'Download CV (PDF)',
+    'hero.cta3': 'Cover letter (PDF)',
     'hero.fig': 'Fig. 01 — Three pillars, one node',
     'hero.scroll': 'continue',
     'pillars.law': 'LAW',
@@ -190,7 +191,9 @@
     'contact.lede': 'Email is fastest. I reply within 24 hours on working days.',
     'contact.email': 'E-mail',
     'contact.phone': 'Phone',
-    'contact.meta': 'PRAGUE / PRŮHONICE · CZ · CV (PDF) · COVER LETTER (PDF)',
+    'contact.loc': 'PRŮHONICE · CZ',
+    'contact.cvLink': 'CV (PDF)',
+    'contact.clLink': 'COVER LETTER (PDF)',
     'contact.copy': '© 2026 Kateřina Mlsnová. This page was written by hand with Claude Code.'
   };
 
